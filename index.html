@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="style.css">
+<div id="app">    
+    <div class="cat-title" id="cat">
+        Random cat :D
+      <button id="btn-update" @click="updatePhoto()">Update</button>
+      <div v-if="loading">Loading...</div>
+      <img id="cat-photo" :src="imgSrc" v-if="imgSrc && !loading"  />
+    </div>   
+
+    
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.js" integrity="sha512-O6tHqhhtbA0lp2MY4ACpMaXG+PWikl7G76bWbXclKFU6puuFemXNPoonumzysDjRC8PEnZ5m8uKGbaWdASkF+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="script.js" defer></script>
